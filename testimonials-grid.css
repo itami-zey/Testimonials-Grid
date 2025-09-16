@@ -1,69 +1,35 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-}
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
-}
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-input, button, textarea, select {
-  font: inherit;
-}
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
-}
 body {
     font-size:13px;
     font-family:"Barlow Semi Condensed", sans-serif;
     display:grid;
     place-items:center;
     text-align:left;
-    margin:0;
     background-color:hsl(214, 17%, 92%);
     box-sizing:border-box;
-    padding-top:2rem;
-    padding-bottom:2rem;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-.pattern {
-    display:none;
+    min-height:100vh;
 }
 h1 {
     display:none;
 }
 .avatar {
     border-radius:50%;
-    width:2.2rem;
-    height:2.2rem;
+    width:1.7rem;
+    height:1.7rem;
 }
 .container {
     display:grid;
     grid-template-columns:1fr;
     gap:2rem;
     max-width:1100px;
-    margin:2.2rem;
+    margin:2rem 1rem;
     height:auto;
 }
 .information {
     display:inline-block;
     align-items:center;
-    margin:0 0.5rem;
     line-height:0.3em;
     font-weight:300;
+    margin-left:0.5rem;
 }
 .name {
     font-size:0.9rem;
@@ -85,13 +51,13 @@ h2 {
     color:hsl(260, 100%, 95%);
     padding-right:2.8rem;
     padding-left:1.9rem;
-    padding-top:1.4rem;
+    padding-top:1rem;
     padding-bottom:1.4rem;
     box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
 }
 .daniel .avatar {
     border:0.15rem solid hsl(264, 82%, 80%);
-    margin-bottom:-0.4rem;
+    margin-bottom:-0.2rem;
 }
 .jonathan {
     background-color:hsl(217, 19%, 35%);
@@ -99,7 +65,7 @@ h2 {
     color:hsl(210, 46%, 95%);
     padding-right:2.8rem;
     padding-left:1.9rem;
-    padding-top:1.4rem;
+    padding-top:1rem;
     padding-bottom:1.4rem;
     box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
 }
@@ -107,7 +73,7 @@ h2 {
     color:hsl(214, 17%, 92%);
 }
 .jonathan .avatar {
-    margin-bottom:-0.4rem;
+    margin-bottom:-0.2rem;
     border:0.15rem solid hsl(217, 19%, 35%);
 }
 .jeanette {
@@ -116,12 +82,12 @@ h2 {
     border-radius:0.6rem;
     padding-right:2.8rem;
     padding-left:1.9rem;
-    padding-top:1.4rem;
+    padding-top:1rem;
     padding-bottom:1.4rem;
     box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
 }
 .jeanette .avatar {
-    margin-bottom:-0.4rem;
+    margin-bottom:-0.2rem;
     border:0.15rem solid hsl(0, 0%, 100%);
 }
 .patrick {
@@ -130,13 +96,13 @@ h2 {
     color:hsl(0, 0%, 81%);
     padding-right:2.8rem;
     padding-left:1.9rem;
-    padding-top:1.4rem;
+    padding-top:1rem;
     padding-bottom:1.4rem;
     box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
 }
 .patrick .avatar {
     border:0.15rem solid hsl(263, 55%, 52%);
-    margin-bottom:-0.4rem;
+    margin-bottom:-0.2rem;
 }
 .kira {
     background-color:hsl(0, 0%, 100%);
@@ -144,12 +110,12 @@ h2 {
     border-radius:0.6rem;
     padding-right:2.8rem;
     padding-left:1.9rem;
-    padding-top:1.4rem;
+    padding-top:1rem;
     padding-bottom:1.4rem;
     box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
 }
 .kira .avatar {
-    margin-bottom:-0.4rem;
+    margin-bottom:-0.2rem;
     border:0.15rem solid hsl(0, 0%, 100%);
 }
 .daniel:hover, .jonathan:hover, .jeanette:hover, .patrick:hover, .kira:hover {
@@ -158,6 +124,10 @@ h2 {
         transform: matrix(1.03, 0, 0, 1.03, 0, 0);
 }
 @media screen and (min-width:768px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
     .container {
         grid-template-columns:repeat(4, 1fr);
         grid-template-rows:repeat(2, 1fr);
@@ -169,24 +139,24 @@ h2 {
         background-image:url(bg-pattern-quotation.svg);
         background-repeat:no-repeat;
         background-position:top 0.1rem left 85%;
-        background-size:7.4rem;
-        padding-top:1.8rem;
-        padding-bottom:0.5rem;
+        background-size:6.5rem;
+        padding-top:1rem;
+        padding-bottom:1rem;
         padding-left:2rem;
         padding-right:2rem;
     }
     .jonathan {
         grid-column:3/span 1;
         grid-row:1;
-        padding-top:1.8rem;
-        padding-bottom:0.5rem;
+        padding-top:1rem;
+        padding-bottom:1rem;
         padding-left:2rem;
         padding-right:2rem;
     }
     .jeanette {
         grid-column:1;
         grid-row:2;
-        padding-top:1.8rem;
+        padding-top:1.5rem;
         padding-bottom:0.5rem;
         padding-left:2rem;
         padding-right:2.4rem;
@@ -197,18 +167,18 @@ h2 {
     .patrick {
         grid-column:2/span 2;
         grid-row:2;
-        padding-top:1.8rem;
+        padding-top:1.5rem;
         padding-bottom:0.5rem;
         padding-left:1.7rem;
-        padding-right:1.7rem;
-    }
+        padding-right:1.5rem;
+    }    
     .kira {
         grid-column:4;
         grid-row:1/span 2;
-        padding-top:1.8rem;
+        padding-top:1rem;
         padding-bottom:0.5rem;
         padding-left:1.7rem;
-        padding-right:1.6rem;
+        padding-right:1.5rem;
     }
     h2 {
         font-size:1.2rem;
@@ -220,6 +190,10 @@ h2 {
         margin-bottom:0;
         padding-bottom:0;
     }
+    .jeanette .comment, .patrick .comment {
+        line-height:1.7em;
+    }
 }
+
 
 
