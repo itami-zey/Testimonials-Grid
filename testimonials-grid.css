@@ -1,3 +1,8 @@
+* {
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
 body {
     font-size:13px;
     font-family:"Barlow Semi Condensed", sans-serif;
@@ -192,3 +197,4 @@ h2 {
         padding-bottom:0;
     }
 }
+
