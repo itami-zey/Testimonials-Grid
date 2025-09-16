@@ -27,7 +27,7 @@ h1 {
     gap:2rem;
     max-width:1100px;
     margin:2.2rem;
-    height:80vh;
+    height:auto;
 }
 .information {
     display:inline-block;
@@ -132,7 +132,6 @@ h2 {
     .container {
         grid-template-columns:repeat(4, 1fr);
         grid-template-rows:repeat(2, 1fr);
-        place-items:space-evenly;
         gap:20px;
     }
     .daniel {
@@ -163,6 +162,9 @@ h2 {
         padding-left:2rem;
         padding-right:2.4rem;
     }
+    .jeanette h2 {
+        margin-right:1.5em;
+    }
     .patrick {
         grid-column:2/span 2;
         grid-row:2;
@@ -172,12 +174,12 @@ h2 {
         padding-right:1.7rem;
     }
     .kira {
-        grid-column:4/span 2;
+        grid-column:4;
         grid-row:1/span 2;
         padding-top:1.8rem;
         padding-bottom:0.5rem;
-        padding-left:1.8rem;
-        padding-right:2.4rem;
+        padding-left:1.7rem;
+        padding-right:1.6rem;
     }
     h2 {
         font-size:1.2rem;
@@ -189,5 +191,4 @@ h2 {
         margin-bottom:0;
         padding-bottom:0;
     }
-
 }
