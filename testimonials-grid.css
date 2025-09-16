@@ -1,0 +1,192 @@
+body {
+    font-size:13px;
+    font-family:"Barlow Semi Condensed", sans-serif;
+    display:grid;
+    place-items:center;
+    text-align:left;
+    margin:0;
+    background-color:hsl(214, 17%, 92%);
+    box-sizing:border-box;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.pattern {
+    display:none;
+}
+h1 {
+    display:none;
+}
+.avatar {
+    border-radius:50%;
+    width:2.2rem;
+    height:2.2rem;
+}
+.container {
+    display:grid;
+    grid-template-columns:repeat(1fr);
+    gap:2rem;
+    max-width:1100px;
+    margin:2.2rem;
+    height:80vh;
+}
+.information {
+    display:inline-block;
+    align-items:center;
+    margin:0 0.5rem;
+    line-height:0.3em;
+    font-weight:300;
+}
+.name {
+    font-size:0.9rem;
+    font-weight:500;
+}
+.comment {
+    font-size:0.9rem;
+    line-height:1.3em;
+    margin-bottom:1rem;
+}
+h2 {
+    font-size:1.4rem;
+    line-height:1.2em;
+    font-weight:500;
+}
+.daniel {
+    background-color:hsl(263, 55%, 52%);
+    border-radius:0.6rem;
+    color:hsl(260, 100%, 95%);
+    padding-right:2.8rem;
+    padding-left:1.9rem;
+    padding-top:1.4rem;
+    padding-bottom:1.4rem;
+    box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
+}
+.daniel .avatar {
+    border:0.15rem solid hsl(264, 82%, 80%);
+    margin-bottom:-0.4rem;
+}
+.jonathan {
+    background-color:hsl(217, 19%, 35%);
+    border-radius:0.6rem;
+    color:hsl(210, 46%, 95%);
+    padding-right:2.8rem;
+    padding-left:1.9rem;
+    padding-top:1.4rem;
+    padding-bottom:1.4rem;
+    box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
+}
+.jonathan .comment {
+    color:hsl(214, 17%, 92%);
+}
+.jonathan .avatar {
+    margin-bottom:-0.4rem;
+    border:0.15rem solid hsl(217, 19%, 35%);
+}
+.jeanette {
+    background-color:hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+    border-radius:0.6rem;
+    padding-right:2.8rem;
+    padding-left:1.9rem;
+    padding-top:1.4rem;
+    padding-bottom:1.4rem;
+    box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
+}
+.jeanette .avatar {
+    margin-bottom:-0.4rem;
+    border:0.15rem solid hsl(0, 0%, 100%);
+}
+.patrick {
+    background-color:hsl(219, 29%, 14%);
+    border-radius:0.6rem;
+    color:hsl(0, 0%, 81%);
+    padding-right:2.8rem;
+    padding-left:1.9rem;
+    padding-top:1.4rem;
+    padding-bottom:1.4rem;
+    box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
+}
+.patrick .avatar {
+    border:0.15rem solid hsl(263, 55%, 52%);
+    margin-bottom:-0.4rem;
+}
+.kira {
+    background-color:hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+    border-radius:0.6rem;
+    padding-right:2.8rem;
+    padding-left:1.9rem;
+    padding-top:1.4rem;
+    padding-bottom:1.4rem;
+    box-shadow:0 10px 60px -30px hsl(0, 0%, 7%);
+}
+.kira .avatar {
+    margin-bottom:-0.4rem;
+    border:0.15rem solid hsl(0, 0%, 100%);
+}
+.daniel:hover, .jonathan:hover, .jeanette:hover, .patrick:hover, .kira:hover {
+        cursor:pointer;
+        transition:all 0.3s ease-in-out;
+        transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+}
+@media screen and (min-width:768px) {
+    .container {
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+        place-items:space-evenly;
+        gap:20px;
+    }
+    .daniel {
+        grid-column:1/span 2;
+        grid-row:1;
+        background-image:url(bg-pattern-quotation.svg);
+        background-repeat:no-repeat;
+        background-position:top 0.1rem left 85%;
+        background-size:7.4rem;
+        padding-top:1.8rem;
+        padding-bottom:0.5rem;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+    .jonathan {
+        grid-column:3/span 1;
+        grid-row:1;
+        padding-top:1.8rem;
+        padding-bottom:0.5rem;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+    .jeanette {
+        grid-column:1;
+        grid-row:2;
+        padding-top:1.8rem;
+        padding-bottom:0.5rem;
+        padding-left:2rem;
+        padding-right:2.4rem;
+    }
+    .patrick {
+        grid-column:2/span 2;
+        grid-row:2;
+        padding-top:1.8rem;
+        padding-bottom:0.5rem;
+        padding-left:1.7rem;
+        padding-right:1.7rem;
+    }
+    .kira {
+        grid-column:4/span 2;
+        grid-row:1/span 2;
+        padding-top:1.8rem;
+        padding-bottom:0.5rem;
+        padding-left:1.8rem;
+        padding-right:2.4rem;
+    }
+    h2 {
+        font-size:1.2rem;
+        line-height:1.2em;
+    }
+    .comment {
+        font-size:0.85rem;
+        line-height:1.5em;
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+}
