@@ -1,7 +1,29 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 * {
-    margin:0; 
-    padding:0; 
-    box-sizing:border-box; 
+  margin: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
 }
 body {
     font-size:13px;
@@ -14,6 +36,8 @@ body {
     box-sizing:border-box;
     padding-top:2rem;
     padding-bottom:2rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 .pattern {
     display:none;
@@ -197,4 +221,5 @@ h2 {
         padding-bottom:0;
     }
 }
+
 
